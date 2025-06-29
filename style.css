@@ -345,10 +345,6 @@ li {
     animation: slideInRight 0.8s ease-out; /* Keep the animation */
 }
 
-
-
-
-
 /* CTA Button */
 .cta-button {
     display: inline-block;
@@ -523,8 +519,6 @@ li {
     text-decoration: none;
 }
 
-
-
 .post-header {
     margin-bottom: var(--space-6);
 }
@@ -542,12 +536,9 @@ li {
     font-weight: 500;
 }
 
-
-
 .read-time {
     color: var(--neutral-400);
 }
-
 
 .like-button, .share-button {
     background: none;
@@ -864,7 +855,7 @@ input[type="radio"]:checked ~ .radio-custom::after {
 
 .newsletter-card {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
+    color: rgb(162, 45, 45);
     padding: var(--space-8);
     border-radius: var(--radius-lg);
     text-align: center;
@@ -934,7 +925,7 @@ input[type="radio"]:checked ~ .radio-custom::after {
 }
 
 .contact-method {
-    background: white;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     padding: var(--space-6);
     border-radius: var(--radius-lg);
     text-align: center;
@@ -953,14 +944,14 @@ input[type="radio"]:checked ~ .radio-custom::after {
 }
 
 .contact-details h4 {
-    color: var(--primary-color);
+    color: #000000;
     margin-bottom: var(--space-2);
     font-size: 1rem;
 }
 
 .contact-details p {
     margin: 0;
-    color: var(--neutral-600);
+    color: #000000;
 }
 
 
@@ -1503,22 +1494,4 @@ input[required] {
     }
 }
 
-/* Reduced Motion Support */
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-    
-    .hero-placeholder::before {
-        animation: none;
-    }
-    
-    .status-dot {
-        animation: none;
-    }
-}
 
