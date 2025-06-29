@@ -555,28 +555,7 @@ function trackEvent(eventName, properties = {}) {
     // }
 }
 
-// Track form submissions
-document.addEventListener('submit', function(event) {
-    const form = event.target;
-    const formName = form.id || form.className || 'unknown_form';
-    
-    trackEvent('form_submit', {
-        form_name: formName,
-        page_url: window.location.href
-    });
-});
 
-// Track button clicks
-document.addEventListener('click', function(event) {
-    if (event.target.tagName === 'BUTTON' || event.target.classList.contains('btn')) {
-        const buttonText = event.target.textContent.trim();
-        
-        trackEvent('button_click', {
-            button_text: buttonText,
-            page_url: window.location.href
-        });
-    }
-});
 
 
 // Back to top button
