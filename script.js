@@ -405,8 +405,6 @@ function updateThemeToggleIcon(theme) {
     }
 }
 
-
-
 function initializeSmoothScrolling() {
     // Smooth scroll for anchor links
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
@@ -454,8 +452,6 @@ function throttle(func, limit) {
             setTimeout(() => inThrottle = false, limit);
         }
     };
-
-
 // Lazy loading for images (if implemented)
 function initializeLazyLoading() {
     const images = document.querySelectorAll('img[data-src]');
@@ -473,11 +469,6 @@ function initializeLazyLoading() {
     
     images.forEach(img => imageObserver.observe(img));
 }
-
-
-
-
-
 // Focus management
 function manageFocus() {
     // Skip link for keyboard users
@@ -510,18 +501,12 @@ function manageFocus() {
     document.body.insertBefore(skipLink, document.body.firstChild);
 }
 
-
-
-
 function trackEvent(eventName, properties = {}) {
     // Placeholder for analytics tracking
     console.log('Track event:', eventName, properties);
-    
-
 }
 
-
-
+}
 
 // Back to top button
 function createBackToTopButton() {
