@@ -1111,16 +1111,7 @@ input[type="radio"]:checked ~ .radio-custom::after {
     border-bottom: none;
 }
 
-.contact-button {
-    display: inline-block;
-    background: var(--primary-color);
-    color: white;
-    padding: var(--space-3) var(--space-6);
-    border-radius: var(--radius-md);
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color var(--transition-fast);
-}
+
 
 .contact-button:hover {
     background: var(--primary-dark);
@@ -1319,10 +1310,7 @@ input[required] {
 .form-group input {
     border-width: 1px;
 }
-
-/* ========================================
-   ANIMATIONS & KEYFRAMES
-   ======================================== */
+/* Keyframes for Animations */
 
 @keyframes slideInLeft {
     from {
@@ -1606,9 +1594,6 @@ input[required] {
         align-items: flex-start;
     }
 }
-
-
-
 
 /* Reduced Motion Support */
 @media (prefers-reduced-motion: reduce) {
