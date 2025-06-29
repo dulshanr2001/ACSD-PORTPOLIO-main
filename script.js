@@ -332,9 +332,6 @@ function showNotification(message, type = 'info') {
     }, 3000);
 }
 
-// ========================================
-// SCROLL ANIMATIONS
-// ========================================
 
 function initializeScrollAnimations() {
     // Intersection Observer for scroll animations
@@ -366,9 +363,6 @@ function initializeScrollAnimations() {
     });
 }
 
-// ========================================
-// THEME TOGGLE FUNCTIONALITY
-// ========================================
 
 function initializeThemeToggle() {
     // Add theme toggle button to navigation
