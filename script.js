@@ -89,14 +89,7 @@ function initializeContactForm() {
             });
         });
 
-        // Form submission
-        contactForm.addEventListener('submit', function(event) {
-            event.preventDefault();
-            
-            if (validateForm(this)) {
-                submitContactForm(this);
-            }
-        });
+        
     }
 }
 
@@ -490,25 +483,7 @@ function initializeLazyLoading() {
 
 
 
-// Keyboard navigation for custom elements
-document.addEventListener('keydown', function(event) {
-    // Handle Enter key on buttons
-    if (event.key === 'Enter' && event.target.tagName === 'BUTTON') {
-        event.target.click();
-    }
-    
-    // Handle Escape key to close mobile menu
-    if (event.key === 'Escape') {
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-        
-        if (hamburger && navMenu && navMenu.classList.contains('active')) {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-            hamburger.setAttribute('aria-expanded', 'false');
-        }
-    }
-});
+
 
 // Focus management
 function manageFocus() {
@@ -549,10 +524,7 @@ function trackEvent(eventName, properties = {}) {
     // Placeholder for analytics tracking
     console.log('Track event:', eventName, properties);
     
-    // Example: Google Analytics 4 event tracking
-    // if (typeof gtag !== 'undefined') {
-    //     gtag('event', eventName, properties);
-    // }
+
 }
 
 
@@ -606,7 +578,3 @@ function createBackToTopButton() {
     document.body.appendChild(backToTop);
 }
 
-// Initialize back to top button
-document.addEventListener('DOMContentLoaded', createBackToTopButton);
-
-console.log('Portfolio JavaScript loaded successfully! 🚀');
