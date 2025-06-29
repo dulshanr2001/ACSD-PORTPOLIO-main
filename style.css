@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
-
 /* Root variables for consistent theming */
 :root {
     /* Color System */
@@ -139,24 +136,8 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Code elements */
-code, pre {
-    font-family: var(--font-mono);
-    background-color: var(--neutral-100);
-    padding: var(--space-1) var(--space-2);
-    border-radius: var(--radius-sm);
-    font-size: 0.875rem;
-}
 
-/* Blockquotes */
-blockquote {
-    border-left: 4px solid var(--primary-color);
-    padding-left: var(--space-4);
-    margin: var(--space-6) 0;
-    font-style: italic;
-    color: var(--neutral-600);
-    background-color: rgba(37, 99, 235, 0.05); /* Semi-transparent background */
-}
+
 
 /* Lists */
 ul, ol {
@@ -356,32 +337,17 @@ li {
 }
 
 .hero-image {
+    
     grid-column: 2; /* Move image to the second (right) column */
-    max-width: 100%; /* Ensure image fits within the grid */
+    max-width: 80%; /* Ensure image fits within the grid */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 40%; /* Keep the circular shape */
+    border-radius: 50%; /* Keep the circular shape */
     animation: slideInRight 0.8s ease-out; /* Keep the animation */
 }
 
-.hero-placeholder {
-    width: 100%;
-    height: 400px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    border-radius: var(--radius-xl);
-    position: relative;
-    overflow: hidden;
-}
 
-.hero-placeholder::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
-    animation: shimmer 2s infinite;
-}
+
+
 
 /* CTA Button */
 .cta-button {
@@ -1083,17 +1049,6 @@ input[type="radio"]:checked ~ .radio-custom::after {
     border: 1px solid var(--neutral-200);
 }
 
-.recent-updates ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.recent-updates li {
-    padding: var(--space-2) 0;
-    color: var(--neutral-600);
-    font-size: 0.875rem;
-}
 
 .facts-list {
     list-style: none;
