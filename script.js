@@ -1,6 +1,4 @@
-// ========================================
-// PORTFOLIO WEBSITE JAVASCRIPT
-// ========================================
+
 
 // DOM Content Loaded Event
 document.addEventListener('DOMContentLoaded', function() {
@@ -15,9 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Portfolio website initialized successfully!');
 });
 
-// ========================================
-// NAVIGATION FUNCTIONALITY
-// ========================================
+
 
 function initializeNavigation() {
     const hamburger = document.querySelector('.hamburger');
@@ -72,9 +68,6 @@ function updateActiveNavigation() {
     });
 }
 
-// ========================================
-// CONTACT FORM FUNCTIONALITY
-// ========================================
 
 function initializeContactForm() {
     const contactForm = document.getElementById('contactForm');
@@ -266,9 +259,7 @@ function showFormSuccess(message) {
     }, 5000);
 }
 
-// ========================================
-// NEWSLETTER FORM FUNCTIONALITY
-// ========================================
+
 
 function initializeNewsletterForm() {
     const newsletterForm = document.getElementById('newsletterForm');
