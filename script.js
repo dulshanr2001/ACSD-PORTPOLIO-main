@@ -419,9 +419,7 @@ function updateThemeToggleIcon(theme) {
     }
 }
 
-// ========================================
-// SMOOTH SCROLLING
-// ========================================
+
 
 function initializeSmoothScrolling() {
     // Smooth scroll for anchor links
@@ -444,9 +442,6 @@ function initializeSmoothScrolling() {
     });
 }
 
-// ========================================
-// UTILITY FUNCTIONS
-// ========================================
 
 // Debounce function for performance optimization
 function debounce(func, wait) {
@@ -473,11 +468,7 @@ function throttle(func, limit) {
             setTimeout(() => inThrottle = false, limit);
         }
     };
-}
 
-// ========================================
-// PERFORMANCE OPTIMIZATIONS
-// ========================================
 
 // Lazy loading for images (if implemented)
 function initializeLazyLoading() {
@@ -497,9 +488,7 @@ function initializeLazyLoading() {
     images.forEach(img => imageObserver.observe(img));
 }
 
-// ========================================
-// ACCESSIBILITY ENHANCEMENTS
-// ========================================
+
 
 // Keyboard navigation for custom elements
 document.addEventListener('keydown', function(event) {
@@ -553,32 +542,8 @@ function manageFocus() {
     document.body.insertBefore(skipLink, document.body.firstChild);
 }
 
-// Initialize accessibility features
-document.addEventListener('DOMContentLoaded', manageFocus);
 
-// ========================================
-// ERROR HANDLING
-// ========================================
 
-// Global error handler
-window.addEventListener('error', function(event) {
-    console.error('Global error:', event.error);
-    
-    // Show user-friendly error message for critical errors
-    if (event.error && event.error.message) {
-        showNotification('Something went wrong. Please refresh the page.', 'error');
-    }
-});
-
-// Promise rejection handler
-window.addEventListener('unhandledrejection', function(event) {
-    console.error('Unhandled promise rejection:', event.reason);
-    event.preventDefault();
-});
-
-// ========================================
-// ANALYTICS & TRACKING (Placeholder)
-// ========================================
 
 function trackEvent(eventName, properties = {}) {
     // Placeholder for analytics tracking
@@ -613,9 +578,6 @@ document.addEventListener('click', function(event) {
     }
 });
 
-// ========================================
-// ADDITIONAL FEATURES
-// ========================================
 
 // Back to top button
 function createBackToTopButton() {
