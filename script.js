@@ -13,8 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Portfolio website initialized successfully!');
 });
 
-
-
 function initializeNavigation() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
@@ -67,7 +65,6 @@ function updateActiveNavigation() {
         }
     });
 }
-
 
 function initializeContactForm() {
     const contactForm = document.getElementById('contactForm');
@@ -275,10 +272,6 @@ function initializeNewsletterForm() {
     }
 }
 
-function validateEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
 
 function submitNewsletterForm(email, frequency) {
     // Simulate API call
